@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 60px;
+    width: 100vw;
+    background-color: blueviolet;
+    display: flex;
+}
+.header_logo{
+    height: inherit;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_pesquisa_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_pesquisa{
+    height: 40px;
+    width: 600px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('img/magnifier_icon-icons.com_48267.png') no-repeat;
+    background-size: 25px;
+}
