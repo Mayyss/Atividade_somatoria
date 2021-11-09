@@ -68,28 +68,50 @@ input[type=submit]:hover{
 }
 
 main{
+    display: flex;
     height: 100vh;
-    width: 100vw;
+    width: auto;
     padding: 10px;
     background-color: #e8eaec;
+    flex-grow: 1;
+}
+
+.galeria_container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .galeria{
+    /* display: flex;
+    gap: 10px;
+    flex-wrap: wrap; */
     height: 290px;
     width: 400px;
     background-color: gray;
-    position: absolute;
 }
 
 .galeria_imagem{
-    height: 100%;
-    background-color: khaki;
+    /* height: inherit; */
+    /* background-color: khaki; */
     /* position: absolute; */
-    /* margin-top: 150px; */
+    flex-grow: 1;
+    overflow: auto;
+    /* margin-top: -150px; */
 }
 
-.galeria_container:hover .galeria_info{
+.galeria_imagem img{
+    height: 290px;
+    width: 400px;
+}
+
+.galeria:hover .galeria_info{
     visibility: visible;
+    background-color: rgb(0, 0, 0);
 }
 
 .galeria_info{
@@ -98,9 +120,8 @@ main{
     /* bottom: -150; */
     /* left: 0; */
     position: absolute;
-    width: 100%;
     background-color: rgb(61, 56, 8);
-    margin-top: -50px;
+    margin-top: -80px;
     visibility: hidden;
 }
 
@@ -136,10 +157,15 @@ main{
     padding: 8px;
 }
 
+/* .itens_interacao .itens{
+    padding: 5px;
+} */
+
 .itens{
     margin: 8px;
     font-size: 20px;
     color: white;
+    padding: 5px;
 }
 
 .itens :hover {
