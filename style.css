@@ -74,8 +74,74 @@ main{
     background-color: #e8eaec;
 }
 
-.galeria_itens{
+.galeria{
     height: 290px;
     width: 400px;
     background-color: gray;
+    position: absolute;
+}
+
+.galeria_imagem{
+    height: 100%;
+    background-color: khaki;
+    /* position: absolute; */
+    /* margin-top: 150px; */
+}
+
+.galeria_container:hover .galeria_info{
+    visibility: visible;
+}
+
+.galeria_info{
+    height: 50px;
+    display: flex;
+    /* bottom: -150; */
+    /* left: 0; */
+    position: absolute;
+    width: 100%;
+    background-color: rgb(61, 56, 8);
+    margin-top: -50px;
+    visibility: hidden;
+}
+
+.itens_relacionados a{
+    text-decoration: none;
+    margin: 4px;
+    color: white;
+    padding: 8px;
+}
+
+.itens_relacionados a:hover {
+    background-color: rgba(255, 255, 255, 0.459);
+}
+
+.itens_relacionados{
+    height: inherit;
+    width: 60%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+
+}
+
+.itens_interacao{
+    height: inherit;
+    width: 40%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px;
+}
+
+.itens{
+    margin: 8px;
+    font-size: 20px;
+    color: white;
+}
+
+.itens :hover {
+    background-color: rgba(255, 255, 255, 0.459);
 }
